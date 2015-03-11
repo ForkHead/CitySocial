@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#95a5a6"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="72dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Write your answer"
+                android:textCursorDrawable="@drawable/text_cursor_cyan"
+                android:textSize="34sp"
+                app:baseColor="@android:color/white"
+                app:floatingLabel="highlight"
+
+                app:primaryColor="?colorAccent"
+                />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/viewImage"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/camera" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/button_send"
+                flatui:fl_theme="@array/sky"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="Answer"
+                android:layout_marginTop="30dp"
+
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_touchEffect="fl_ripple"
+                android:onClick="onAnswerClicked"
+                android:layout_marginLeft="28dp"
+                android:layout_marginBottom="30dp" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/btnSelectPhoto"
+                flatui:fl_theme="@array/sky"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:text="Add Image"
+
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_touchEffect="fl_ripple"
+
+                android:layout_alignBottom="@+id/button_send"
+                android:layout_toRightOf="@+id/button_send"
+                android:layout_toEndOf="@+id/button_send" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
