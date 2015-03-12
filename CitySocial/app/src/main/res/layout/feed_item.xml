@@ -157,13 +157,22 @@
                     fiv:flipRotations="y"
                     fiv:isAnimated="true"
                     fiv:isFlipped="true"/>
-                <ImageButton
-                    android:id="@+id/btnFollow"
-
+        
+                <com.example.sony.citysocial.FlipImageView
+                    xmlns:fiv="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/btnFollow
                     android:layout_width="55dp"
                     android:layout_height="match_parent"
                     android:background="@drawable/btn_feed_action"
-                    android:src="@mipmap/ic_follow" />
+                    android:src="@mipmap/ic_follow" 
+                    fiv:flipDrawable="@mipmap/ic_follow_grey"
+                    fiv:flipDuration="1000"
+                    fiv:flipInterpolator="@android:anim/bounce_interpolator"
+                    fiv:flipRotations="y"
+                    fiv:isAnimated="true"
+                    fiv:isFlipped="true"
+                    
+                    />
 
 
 
